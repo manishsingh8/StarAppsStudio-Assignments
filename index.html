@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Customize Umbrella</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container">
+	
+	   <div class="img_logo">
+	   <img src="loader.png" id="loader" class="loader">
+	   <img src="pinkumb.png"id="image" class="umbrella_img">
+       <img id="logoImage" src="#" alt="Logo"class="logo">
+	   <p id="errorMessage"></p>
+	   </div>
+       
+	<div id="bg_change" class="upload_logo">
+			<div class="select_color">
+				<h1>Custom Umbrella</h1>
+				<!-- buttons to change the color of umbrella -->
+				<button id="btn1" class="btn_color b1"  onclick="changeImage1();circle(this);startAnimation2(); startRotation()"></button>
+				<button id="btn2" class="btn_color b2"  onclick="changeImage2();circle(this);startAnimation2(); startRotation()"></button>
+				<button id="btn3" class="btn_color b3"  onclick="changeImage3();circle(this);startAnimation2(); startRotation()"></button>
+
+				<h3>Customize your umbrella</h3>
+				<p>Upload a logo for an instant preview.
+					<br>
+                .png and .jpg files only.Max file size is 5MB.
+				</p>
+				
+		<!-- for selecting the file from pc			 -->
+				    <div class="file-upload">
+					   <div>
+					     <label for="file" id="change">
+					         <img src="upload.png" id="upload_icon"> 
+					     </label>			            	
+		 			   </div>
+		 			   <div id="file_name">
+						  	UPLOAD LOGO
+					   </div>
+					   <div id="cancel" onclick="clearfile()">
+						   X
+					   </div>
+					</div>
+					<input type="file" id="file" onchange="displayLogo(event)"  accept="image/*" style="visibility:hidden;">
+			</div>
+		</div>
+</div>
+<script type="text/javascript" src="script.js">
+</script>
+</body>
+</html>
+
+			
+				
